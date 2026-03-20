@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}Game - 8ball{% endblock %}
+{% block title %}Game - 8-ball{% endblock %}
 
 {% block content %}
 {% endblock %}
 
 {% block javascript %}
-<script src="../static/js/p5.min.js"></script>
-<script src="../static/js/game.js"></script>
+<script src="{{ url_for('static', filename='js/p5.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
 {% endblock %}
